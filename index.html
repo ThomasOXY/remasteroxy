@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThomasOXY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="JS/typed.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="Main">
+        <h1>Thomas O X Y</h1>
+        <h2> <span class="typed" style="font-weight:bold;"></span></h2>
+        <div class="scroll-down-button">
+            <img class="pulse" src="img/scroll-button.png" alt="Srollujte dolů" /><br />
+            Odscrolujte dolů
+        </div>
+    </section>
+
+    <section class="about">
+
+        <h3>Čemu se věnuji?</h3>
+
+        <div class="btns">
+
+            <button onclick="frontshow()">Front-end řešní</button>
+            <button onclick="responshow()">Responsivní design</button>
+            <button onclick="DJshow()">DJ Kariéra</button>
+        </div>
+
+
+        <div id="front" class="item">
+            <div class="left">
+                <h4>Front-End řešení</h4>
+                <p>Vytvářím front-end řešení webových stránek na míru, Aby jste
+                    byli i Vy v online světě "cool". Rozumím dnešním trendům.
+                    designu stránek. Napište mi vaší představu a domluvíme se. :)
+                </p>
+            </div>
+            <div class="right">
+                <img id="mac" src="img/mac.png" alt="">
+            </div>
+
+
+        </div>
+
+        <div id="respon" class="item">
+            <div class="left">
+                <h4>Responsivní design</h4>
+                <p>Webové stránky na počítači stále zobrazuje méně a méně lidí, proto navrhuji
+                    responsivní řešní pro mobilní zařízení např.: Telefony, Tablety..
+                    Vše musí krásně sedět.
+                </p>
+            </div>
+            <div class="right">
+                <img id="iphone" src="img/iphone.png" alt="">
+
+            </div>
+        </div>
+
+        <div id="DJ" class="item">
+            <div class="left">
+                <h4>Moje DJ kariéra</h4>
+                <p>Jsem začínající DJ. hudba je moje hobby. požívám moderní styly mixování
+                    hraji převážně. Bounce & Bass, EDM, BassLine.
+                    Příležitostně hraji v PohodaKlub Sedlčany.
+                </p>
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+</body>
+<script>
+
+    function frontshow() {
+        document.getElementById("front").style.display = "flex";
+        document.getElementById("respon").style.display = "none";
+        document.getElementById("DJ").style.display = "none";
+    }
+
+    function responshow() {
+        document.getElementById("front").style.display = "none";
+        document.getElementById("respon").style.display = "flex";
+        document.getElementById("DJ").style.display = "none";
+    }
+
+    function DJshow() {
+        document.getElementById("front").style.display = "none";
+        document.getElementById("respon").style.display = "none";
+        document.getElementById("DJ").style.display = "flex";
+    }
+
+</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-940721-18');
+
+    var typed = new Typed('.typed', {
+        strings: ["Front-End developer..", "Responsivní WebDesigner..", "Začínající DJ.."],
+        typeSpeed: 50,
+        loop: !0,
+        backDelay: 1000
+    });
+</script>
+
+</html>
